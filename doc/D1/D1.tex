@@ -1,0 +1,142 @@
+% This must be in the first 5 lines to tell arXiv to use pdfLaTeX, which is strongly recommended.
+\pdfoutput=1
+% In particular, the hyperref package requires pdfLaTeX in order to break URLs across lines.
+
+\documentclass[11pt]{article}
+
+% Remove the "review" option to generate the final version.
+% \usepackage[review]{acl}
+\usepackage{authblk}
+\usepackage{acl}
+% Standard package includes
+\usepackage{times} 
+\usepackage{latexsym}
+\usepackage{multirow}
+\usepackage{array}
+
+
+% For proper rendering and hyphenation of words containing Latin characters (including in bib files)
+\usepackage[T1]{fontenc}
+% For Vietnamese characters
+% \usepackage[T5]{fontenc}
+% See https://www.latex-project.org/help/documentation/encguide.pdf for other character sets
+
+% This assumes your files are encoded as UTF8
+\usepackage[utf8]{inputenc}
+
+\usepackage{enumitem}
+\setlist{nolistsep,leftmargin=*}
+
+% This is not strictly necessary, and may be commented out.
+% However, it will improve the layout of the manuscript,
+% and will typically save some space.
+\usepackage{microtype}
+
+% This is also not strictly necessary, and may be commented out.
+% However, it will improve the aesthetics of text in
+% the typewriter font.
+\usepackage{inconsolata}
+\usepackage{graphicx} 
+\usepackage{float} 
+\usepackage{subfigure} 
+
+
+% If the title and author information does not fit in the area allocated, uncomment the following
+%
+%\setlength\titlebox{<dim>}
+%
+% and set <dim> to something 5cm or larger.
+
+\title{573 Project}
+
+% Author information can be set in various styles:
+% For several authors from the same institution:
+\author{{\bf Yu Ying Chiu},   {\bf Jiayi Yuan},   {\bf Yian Wang},   {\bf Chenxi Li} \\
+% % \author{Author 1 \\ {\bf Author 2} \\ ... \\ {\bf Author n}
+        Department of Linguistics \\ University of Washington \\ Seattle, WA, USA \\
+        \texttt{\{kellycyy, jiayiy9, wangyian, cl91\}@uw.edu}} 
+
+% \author[*]{Yu Ying Chiu}
+% \author[*]{Jiayi Yuan}
+% \author[*]{Yian Wang}
+% \author[*]{Chenxi Li}
+% \affil[*]{Department of Linguistics, University of Washington}
+% \texttt{\{kellycyy, jiayiy9, wangyian, cl91\}@uw.edu}
+\begin{document}
+% it seems author info needs to be entered in .sty file, line 150
+\maketitle
+\begin{abstract}
+This is the abstract part.
+\end{abstract}
+
+\section{Introduction}
+% Briefly overview the questions you are approaching, summarize the main conclusions, and give an overview of the paper. \\
+% % \citep: (author, year)
+% % \citet: author(year)
+% This is an example of citation. ... \citep{paul2010summarizing}.\\
+This is the introduction part.
+
+\section{Task description}
+We select the shared task (FETA challenge) by \citet{albalak-etal-2022-feta}. It is a new benchmark for few-sample task transfer in open-domain dialogue. In this benchmark, we selected the FETA-Friends as our dataset from \citet{chen2016character}. It involves transcripts for all 10 seasons of the TV show (Friends). 
+
+The FETA-friends benchmark contains 7 tasks. We selected Emotion Recognition (Emory NLP) by \citet{zahiri2017emotion} as our primary task and Personality Detection by \citet{jiang2020automatic} as our adaptation task.
+
+For the primary task, the dataset contains utterances with one of the annotated emotions (eg. Neutral, Joyful, Powerful, Mad, Scared etc.). According to the dataset github \footnote{\url{https://github.com/emorynlp/emotion-detection}}, the dataset fields include the utterance id, speaker name, transcript, tokens and annotated emotion. It is an utterance-level classification task. The evaluation is to calculate the micro-F1 and W-F1 scores of the prediction (classification output). 
+
+For the adaptation task, the dataset contains short conversations with annotated binary Big Five personality traits (Agreeableness, Conscientiousness, Extroversion, Openness, and Neuroticism). According to the dataset github \footnote{\url{https://github.com/emorynlp/personality-detection}}, each personality trait was annotated on a scale of -1, 0 , 1. The annotation of each trait in a short conversation will be summed up. The dataset contains scene id, character, AGR (Agreeableness), CON (Conscientiousness), EXT (Extroversion), OPN (Openness), NEU (Neuroticism), and text. It is a dialogue-level classification task. The evaluation is to calculate the accuracy of the prediction output.
+
+For the key dimensions, the primary task has emotion as affect type, classification as recognition type, TV transcript as Genre, aspect-specific emotion as the target, text as modality, and English as language. For the adaptation task, it has personality type as affect type,  aspect-specific personality detection as target, and all the other dimensions are the same as the primary task selected.
+
+The FETA benchmark \footnote{\url{https://github.com/alon-albalak/TLiDB/blob/master/FETA_README.md}} provides access to data (train, test, dev), training and evaluation tool as a reference. The original author of dataset \footnote{\url{https://github.com/emorynlp}} also provides access to the same dataset.
+
+\section{System Overview}\label{sys-overview}
+This provides an overview for the systems.
+
+\section{Approach}\label{approach}
+% Our approach is comprised of four main steps. 
+% Pre-processing, content selection, IO, and content realization.
+This is the approach part.
+
+
+\section{Results}\label{results}
+This presents the results of the model.
+
+\section{Discussion}\label{discussion}
+Discuss the results.
+
+\section{Ethical Considerations}\label{ethical considerations}
+This part discusses ethical considerations.
+
+\section{Conclusions}\label{conclusion}
+This part presents the conclusion.
+
+
+
+% \notice{X, Y, ...} displays selected references from custom.bib
+% X = string before author in custom.bib
+
+% \nocite{albalak-etal-2022-feta}
+
+% Entries for the entire Anthology, followed by custom entries
+\bibliography{anthology,custom}
+\bibliographystyle{acl_natbib}
+
+\appendix
+\section*{Appendix A: Work Split}
+\label{sec:appendix}
+work split in detail
+
+\appendix
+% section* to remove number/letter
+\section*{Appendix B: Packages Used in the Systems}
+\label{sec:appendix}
+% \url{address} to add url
+Link to the code repository on github: \\\url{https://github.com/kellycyy/LING573-project}\\\\
+Off-the-shell tools used in code:
+
+\begin{itemize}
+\item \texttt{sample package} how the package is used for what
+\end{itemize}
+
+\end{document}
+

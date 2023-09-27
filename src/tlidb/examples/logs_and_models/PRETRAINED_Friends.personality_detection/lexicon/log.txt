@@ -1,0 +1,65 @@
+TRAINING
+Configuration:
+Frac: 1.0
+Debug: False
+Generate during training: False
+Model config: lexicon
+Cpu only: False
+Seed: -1
+Log and model dir: ./logs_and_models
+Saved model dir: None
+Data dir: /home2/wangyian/573/LING573-project/src/tlidb/examples/../TLiDB/data
+Num workers: 4
+Pipeline parallel: False
+Model: lexicon
+Max dialogue length: 0
+Do train: True
+Do finetune: False
+Num epochs: 10
+Effective batch size: 60
+Gpu batch size: 20
+Learning rate: 0
+Fp16: True
+Max grad norm: 1.0
+Save best: True
+Save last: False
+Imbalanced task weighting: False
+Do eval: True
+Eval best: True
+Eval last: False
+Source tasks: ['personality_detection']
+Source datasets: ['Friends']
+Target tasks: ['personality_detection']
+Target datasets: ['Friends']
+Multitask: False
+Few shot percent: None
+Optimizer: None
+Weight decay: 0.0
+Progress bar: True
+Save pred: False
+Resume: False
+Model type: lexicon
+Device: cuda
+Train datasets: ['Friends']
+Train tasks: ['personality_detection']
+Dev datasets: ['Friends']
+Dev tasks: ['personality_detection']
+Finetune datasets: ['Friends']
+Finetune tasks: ['personality_detection']
+Eval datasets: ['Friends']
+Eval tasks: ['personality_detection']
+Save path dir: ./logs_and_models/PRETRAINED_Friends.personality_detection/lexicon
+
+Datasets:
+train | Friends - personality_detection - acc - 2 classes - 2435 examples | 
+dev | Friends - personality_detection - acc - 2 classes - 570 examples | 
+test | Friends - personality_detection - acc - 2 classes - 550 examples | 
+Writing output to /home2/wangyian/573/LING573-project/outputs/D4/personality_detection_lexicon_dev.txt
+Done writing output to /home2/wangyian/573/LING573-project/outputs/D4/personality_detection_lexicon_dev.txt
+Writing output to /home2/wangyian/573/LING573-project/outputs/D4/personality_detection_true_dev.txt
+Done writing output to /home2/wangyian/573/LING573-project/outputs/D4/personality_detection_true_dev.txt
+Split dev, accuracy = 0.5824561403508772, micro_f1 = 0.5824561403508772, weighted_f1 = 0.5781822733011188Writing output to /home2/wangyian/573/LING573-project/outputs/D4/personality_detection_lexicon_test.txt
+Done writing output to /home2/wangyian/573/LING573-project/outputs/D4/personality_detection_lexicon_test.txt
+Writing output to /home2/wangyian/573/LING573-project/outputs/D4/personality_detection_true_test.txt
+Done writing output to /home2/wangyian/573/LING573-project/outputs/D4/personality_detection_true_test.txt
+Split test, accuracy = 0.5636363636363636, micro_f1 = 0.5636363636363636, weighted_f1 = 0.5610363816917937

@@ -1,0 +1,355 @@
+
+# !python3 run_experiment.py --source_datasets Friends --source_tasks emory_emotion_recognition --target_datasets Friends --target_tasks emory_emotion_recognition --do_train --do_eval --eval_best --model_config bert
+2023-04-08 07:58:41.926797: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-04-08 07:58:42.911324: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Saving data at: /content/drive/.shortcut-targets-by-id/11AZFd2NLgvCCRF_dyZ5p2M6wEGqrh9yX/573-own/TLiDB/tlidb/examples/../TLiDB/data
+/usr/local/lib/python3.9/dist-packages/torch/utils/data/dataloader.py:561: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+TRAINING
+Configuration:
+Frac: 1.0
+Debug: False
+Generate during training: False
+Model config: bert
+Cpu only: False
+Seed: -1
+Log and model dir: ./logs_and_models
+Saved model dir: None
+Data dir: /content/drive/.shortcut-targets-by-id/11AZFd2NLgvCCRF_dyZ5p2M6wEGqrh9yX/573-own/TLiDB/tlidb/examples/../TLiDB/data
+Num workers: 4
+Pipeline parallel: False
+Model: bert-base-uncased
+Max dialogue length: 0
+Do train: True
+Do finetune: False
+Num epochs: 10
+Effective batch size: 60
+Gpu batch size: 20
+Learning rate: 3e-05
+Fp16: True
+Max grad norm: 1.0
+Save best: True
+Save last: False
+Imbalanced task weighting: False
+Do eval: True
+Eval best: True
+Eval last: False
+Source tasks: ['emory_emotion_recognition']
+Source datasets: ['Friends']
+Target tasks: ['emory_emotion_recognition']
+Target datasets: ['Friends']
+Multitask: False
+Few shot percent: None
+Optimizer: Adam
+Weight decay: 0.0
+Progress bar: True
+Save pred: False
+Resume: False
+Model type: Encoder
+Device: cuda
+Train datasets: ['Friends']
+Train tasks: ['emory_emotion_recognition']
+Dev datasets: ['Friends']
+Dev tasks: ['emory_emotion_recognition']
+Finetune datasets: ['Friends']
+Finetune tasks: ['emory_emotion_recognition']
+Eval datasets: ['Friends']
+Eval tasks: ['emory_emotion_recognition']
+Save path dir: ./logs_and_models/PRETRAINED_Friends.emory_emotion_recognition/bert-base-uncased
+
+Datasets:
+train | Friends - emory_emotion_recognition - F1-micro - F1-weighted - 7 classes - 8629 examples | 
+dev | Friends - emory_emotion_recognition - F1-micro - F1-weighted - 7 classes - 2065 examples | 
+Some weights of the model checkpoint at bert-base-uncased were not used when initializing BertModel: ['cls.predictions.transform.LayerNorm.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.predictions.bias', 'cls.predictions.transform.dense.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.seq_relationship.bias']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+
+Epoch 0
+Train losses | emory_emotion_recognition_Friends: 1.7002: 100% 432/432 [03:58<00:00,  1.81it/s]
+Epoch eval:
+Friends emory_emotion_recognition-
+Loss-cross_entropy: 1.7002
+F1-micro: 0.3679
+F1-weighted: 0.2887
+
+/usr/local/lib/python3.9/dist-packages/torch/utils/data/dataloader.py:561: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Validation losses | emory_emotion_recognition_Friends: 1.5857: 100% 104/104 [00:55<00:00,  1.87it/s]
+Epoch eval:
+Friends emory_emotion_recognition-
+Loss-cross_entropy: 1.5857
+F1-micro: 0.4228
+F1-weighted: 0.3623
+
+Validation metric: 0.3925
+Epoch 0 gives best validation result so far.
+Saved model to ./logs_and_models/PRETRAINED_Friends.emory_emotion_recognition/bert-base-uncased/best_model.pt
+
+
+Epoch 1
+/usr/local/lib/python3.9/dist-packages/torch/utils/data/dataloader.py:561: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Train losses | emory_emotion_recognition_Friends: 1.3779: 100% 432/432 [04:03<00:00,  1.77it/s]
+Epoch eval:
+Friends emory_emotion_recognition-
+Loss-cross_entropy: 1.3779
+F1-micro: 0.5081
+F1-weighted: 0.4617
+
+/usr/local/lib/python3.9/dist-packages/torch/utils/data/dataloader.py:561: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Validation losses | emory_emotion_recognition_Friends: 1.5975: 100% 104/104 [00:55<00:00,  1.87it/s]
+Epoch eval:
+Friends emory_emotion_recognition-
+Loss-cross_entropy: 1.5975
+F1-micro: 0.4179
+F1-weighted: 0.3857
+
+Validation metric: 0.4018
+Epoch 1 gives best validation result so far.
+Saved model to ./logs_and_models/PRETRAINED_Friends.emory_emotion_recognition/bert-base-uncased/best_model.pt
+
+
+Epoch 2
+/usr/local/lib/python3.9/dist-packages/torch/utils/data/dataloader.py:561: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Train losses | emory_emotion_recognition_Friends: 0.9634: 100% 432/432 [04:02<00:00,  1.78it/s]
+Epoch eval:
+Friends emory_emotion_recognition-
+Loss-cross_entropy: 0.9634
+F1-micro: 0.6696
+F1-weighted: 0.6521
+
+/usr/local/lib/python3.9/dist-packages/torch/utils/data/dataloader.py:561: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Validation losses | emory_emotion_recognition_Friends: 1.7870: 100% 104/104 [00:55<00:00,  1.87it/s]
+Epoch eval:
+Friends emory_emotion_recognition-
+Loss-cross_entropy: 1.7870
+F1-micro: 0.4160
+F1-weighted: 0.3888
+
+Validation metric: 0.4024
+Epoch 2 gives best validation result so far.
+Saved model to ./logs_and_models/PRETRAINED_Friends.emory_emotion_recognition/bert-base-uncased/best_model.pt
+
+
+Epoch 3
+/usr/local/lib/python3.9/dist-packages/torch/utils/data/dataloader.py:561: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Train losses | emory_emotion_recognition_Friends: 0.5456: 100% 432/432 [04:04<00:00,  1.77it/s]
+Epoch eval:
+Friends emory_emotion_recognition-
+Loss-cross_entropy: 0.5456
+F1-micro: 0.8199
+F1-weighted: 0.8158
+
+/usr/local/lib/python3.9/dist-packages/torch/utils/data/dataloader.py:561: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Validation losses | emory_emotion_recognition_Friends: 2.2581: 100% 104/104 [00:55<00:00,  1.87it/s]
+Epoch eval:
+Friends emory_emotion_recognition-
+Loss-cross_entropy: 2.2581
+F1-micro: 0.3661
+F1-weighted: 0.3751
+
+Validation metric: 0.3706
+
+
+Epoch 4
+/usr/local/lib/python3.9/dist-packages/torch/utils/data/dataloader.py:561: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Train losses | emory_emotion_recognition_Friends: 0.2953: 100% 432/432 [04:02<00:00,  1.78it/s]
+Epoch eval:
+Friends emory_emotion_recognition-
+Loss-cross_entropy: 0.2953
+F1-micro: 0.9057
+F1-weighted: 0.9049
+
+/usr/local/lib/python3.9/dist-packages/torch/utils/data/dataloader.py:561: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Validation losses | emory_emotion_recognition_Friends: 2.6256: 100% 104/104 [00:55<00:00,  1.87it/s]
+Epoch eval:
+Friends emory_emotion_recognition-
+Loss-cross_entropy: 2.6256
+F1-micro: 0.3554
+F1-weighted: 0.3655
+
+Validation metric: 0.3605
+
+
+Epoch 5
+/usr/local/lib/python3.9/dist-packages/torch/utils/data/dataloader.py:561: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Train losses | emory_emotion_recognition_Friends: 0.1657: 100% 432/432 [04:03<00:00,  1.77it/s]
+Epoch eval:
+Friends emory_emotion_recognition-
+Loss-cross_entropy: 0.1657
+F1-micro: 0.9484
+F1-weighted: 0.9482
+
+/usr/local/lib/python3.9/dist-packages/torch/utils/data/dataloader.py:561: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Validation losses | emory_emotion_recognition_Friends: 2.9531: 100% 104/104 [00:55<00:00,  1.87it/s]
+Epoch eval:
+Friends emory_emotion_recognition-
+Loss-cross_entropy: 2.9531
+F1-micro: 0.3801
+F1-weighted: 0.3650
+
+Validation metric: 0.3726
+
+
+Epoch 6
+/usr/local/lib/python3.9/dist-packages/torch/utils/data/dataloader.py:561: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Train losses | emory_emotion_recognition_Friends: 0.1222: 100% 432/432 [04:03<00:00,  1.78it/s]
+Epoch eval:
+Friends emory_emotion_recognition-
+Loss-cross_entropy: 0.1222
+F1-micro: 0.9608
+F1-weighted: 0.9608
+
+/usr/local/lib/python3.9/dist-packages/torch/utils/data/dataloader.py:561: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Validation losses | emory_emotion_recognition_Friends: 3.3786: 100% 104/104 [00:55<00:00,  1.87it/s]
+Epoch eval:
+Friends emory_emotion_recognition-
+Loss-cross_entropy: 3.3786
+F1-micro: 0.3777
+F1-weighted: 0.3698
+
+Validation metric: 0.3737
+
+
+Epoch 7
+/usr/local/lib/python3.9/dist-packages/torch/utils/data/dataloader.py:561: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Train losses | emory_emotion_recognition_Friends: 0.1077: 100% 432/432 [04:04<00:00,  1.77it/s]
+Epoch eval:
+Friends emory_emotion_recognition-
+Loss-cross_entropy: 0.1077
+F1-micro: 0.9663
+F1-weighted: 0.9662
+
+/usr/local/lib/python3.9/dist-packages/torch/utils/data/dataloader.py:561: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Validation losses | emory_emotion_recognition_Friends: 3.5660: 100% 104/104 [00:55<00:00,  1.87it/s]
+Epoch eval:
+Friends emory_emotion_recognition-
+Loss-cross_entropy: 3.5660
+F1-micro: 0.3380
+F1-weighted: 0.3528
+
+Validation metric: 0.3454
+
+
+Epoch 8
+/usr/local/lib/python3.9/dist-packages/torch/utils/data/dataloader.py:561: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Train losses | emory_emotion_recognition_Friends: 0.0845: 100% 432/432 [04:03<00:00,  1.78it/s]
+Epoch eval:
+Friends emory_emotion_recognition-
+Loss-cross_entropy: 0.0845
+F1-micro: 0.9723
+F1-weighted: 0.9723
+
+/usr/local/lib/python3.9/dist-packages/torch/utils/data/dataloader.py:561: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Validation losses | emory_emotion_recognition_Friends: 3.8487: 100% 104/104 [00:55<00:00,  1.87it/s]
+Epoch eval:
+Friends emory_emotion_recognition-
+Loss-cross_entropy: 3.8487
+F1-micro: 0.3690
+F1-weighted: 0.3546
+
+Validation metric: 0.3618
+
+
+Epoch 9
+/usr/local/lib/python3.9/dist-packages/torch/utils/data/dataloader.py:561: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Train losses | emory_emotion_recognition_Friends: 0.0810: 100% 432/432 [04:03<00:00,  1.77it/s]
+Epoch eval:
+Friends emory_emotion_recognition-
+Loss-cross_entropy: 0.0810
+F1-micro: 0.9735
+F1-weighted: 0.9734
+
+/usr/local/lib/python3.9/dist-packages/torch/utils/data/dataloader.py:561: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Validation losses | emory_emotion_recognition_Friends: 3.6886: 100% 104/104 [00:55<00:00,  1.87it/s]
+Epoch eval:
+Friends emory_emotion_recognition-
+Loss-cross_entropy: 3.6886
+F1-micro: 0.3705
+F1-weighted: 0.3664
+
+Validation metric: 0.3684
+
+EVALUATING
+/usr/local/lib/python3.9/dist-packages/torch/utils/data/dataloader.py:561: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Configuration:
+Frac: 1.0
+Debug: False
+Generate during training: False
+Model config: bert
+Cpu only: False
+Seed: -1
+Log and model dir: ./logs_and_models
+Saved model dir: None
+Data dir: /content/drive/.shortcut-targets-by-id/11AZFd2NLgvCCRF_dyZ5p2M6wEGqrh9yX/573-own/TLiDB/tlidb/examples/../TLiDB/data
+Num workers: 4
+Pipeline parallel: False
+Model: bert-base-uncased
+Max dialogue length: 0
+Do train: True
+Do finetune: False
+Num epochs: 10
+Effective batch size: 60
+Gpu batch size: 20
+Learning rate: 3e-05
+Fp16: True
+Max grad norm: 1.0
+Save best: True
+Save last: False
+Imbalanced task weighting: False
+Do eval: True
+Eval best: True
+Eval last: False
+Source tasks: ['emory_emotion_recognition']
+Source datasets: ['Friends']
+Target tasks: ['emory_emotion_recognition']
+Target datasets: ['Friends']
+Multitask: False
+Few shot percent: None
+Optimizer: Adam
+Weight decay: 0.0
+Progress bar: True
+Save pred: False
+Resume: False
+Model type: Encoder
+Device: cuda
+Train datasets: ['Friends']
+Train tasks: ['emory_emotion_recognition']
+Dev datasets: ['Friends']
+Dev tasks: ['emory_emotion_recognition']
+Finetune datasets: ['Friends']
+Finetune tasks: ['emory_emotion_recognition']
+Eval datasets: ['Friends']
+Eval tasks: ['emory_emotion_recognition']
+Save path dir: ./logs_and_models/PRETRAINED_Friends.emory_emotion_recognition/bert-base-uncased
+
+Datasets:
+test | Friends - emory_emotion_recognition - F1-micro - F1-weighted - 7 classes - 1912 examples | 
+Some weights of the model checkpoint at bert-base-uncased were not used when initializing BertModel: ['cls.predictions.transform.LayerNorm.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.predictions.bias', 'cls.predictions.transform.dense.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.seq_relationship.bias']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Loaded model from ./logs_and_models/PRETRAINED_Friends.emory_emotion_recognition/bert-base-uncased/best_model.pt
+Test losses | 1.7440: 100% 96/96 [00:48<00:00,  1.98it/s]
+Eval on test split at epoch 2: Friends emory_emotion_recognition-
+Loss-cross_entropy: 1.7440
+F1-micro: 0.4189
+F1-weighted: 0.3913

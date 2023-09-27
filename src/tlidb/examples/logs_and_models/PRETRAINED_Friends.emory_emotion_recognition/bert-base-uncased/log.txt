@@ -1,0 +1,562 @@
+EVALUATING
+Configuration:
+Frac: 1.0
+Debug: False
+Generate during training: False
+Model config: bert
+Cpu only: False
+Seed: -1
+Log and model dir: ./logs_and_models
+Saved model dir: ./logs_and_models/PRETRAINED_Friends.emory_emotion_recognition/bert-base-uncased/
+Data dir: /home2/wangyian/573/LING573-project/src/tlidb/examples/../TLiDB/data
+Num workers: 4
+Pipeline parallel: False
+Model: bert-base-uncased
+Max dialogue length: 0
+Do train: False
+Do finetune: False
+Num epochs: 10
+Effective batch size: 60
+Gpu batch size: 20
+Learning rate: 3e-05
+Fp16: True
+Max grad norm: 1.0
+Save best: True
+Save last: False
+Imbalanced task weighting: False
+Do eval: True
+Eval best: True
+Eval last: False
+Source tasks: ['emory_emotion_recognition']
+Source datasets: ['Friends']
+Target tasks: ['emory_emotion_recognition']
+Target datasets: ['Friends']
+Multitask: False
+Few shot percent: None
+Optimizer: Adam
+Weight decay: 0.0
+Progress bar: True
+Save pred: False
+Resume: False
+Model type: Encoder
+Device: cuda
+Train datasets: ['Friends']
+Train tasks: ['emory_emotion_recognition']
+Dev datasets: ['Friends']
+Dev tasks: ['emory_emotion_recognition']
+Finetune datasets: ['Friends']
+Finetune tasks: ['emory_emotion_recognition']
+Eval datasets: ['Friends']
+Eval tasks: ['emory_emotion_recognition']
+Save path dir: ./logs_and_models/PRETRAINED_Friends.emory_emotion_recognition/bert-base-uncased
+
+Datasets:
+dev | Friends - emory_emotion_recognition - F1-micro - F1-weighted - 7 classes - 2065 examples | 
+test | Friends - emory_emotion_recognition - F1-micro - F1-weighted - 7 classes - 1912 examples | 
+Loaded model from ./logs_and_models/PRETRAINED_Friends.emory_emotion_recognition/bert-base-uncased/best_model.pt
+Eval on dev split at epoch 3: Friends emory_emotion_recognition-
+Loss-cross_entropy: 1.7671
+F1-micro: 0.4005
+F1-weighted: 0.3688
+
+Eval on test split at epoch 3: Friends emory_emotion_recognition-
+Loss-cross_entropy: 1.7406
+F1-micro: 0.4257
+F1-weighted: 0.3937
+
+EVALUATING
+Configuration:
+Frac: 1.0
+Debug: False
+Generate during training: False
+Model config: bert
+Cpu only: False
+Seed: -1
+Log and model dir: ./logs_and_models
+Saved model dir: ./logs_and_models/PRETRAINED_Friends.emory_emotion_recognition/bert-base-uncased/
+Data dir: /home2/wangyian/573/LING573-project/src/tlidb/examples/../TLiDB/data
+Num workers: 4
+Pipeline parallel: False
+Model: bert-base-uncased
+Max dialogue length: 0
+Do train: False
+Do finetune: False
+Num epochs: 10
+Effective batch size: 60
+Gpu batch size: 20
+Learning rate: 3e-05
+Fp16: True
+Max grad norm: 1.0
+Save best: True
+Save last: False
+Imbalanced task weighting: False
+Do eval: True
+Eval best: True
+Eval last: False
+Source tasks: ['emory_emotion_recognition']
+Source datasets: ['Friends']
+Target tasks: ['emory_emotion_recognition']
+Target datasets: ['Friends']
+Multitask: False
+Few shot percent: None
+Optimizer: Adam
+Weight decay: 0.0
+Progress bar: True
+Save pred: False
+Resume: False
+Model type: Encoder
+Device: cpu
+Train datasets: ['Friends']
+Train tasks: ['emory_emotion_recognition']
+Dev datasets: ['Friends']
+Dev tasks: ['emory_emotion_recognition']
+Finetune datasets: ['Friends']
+Finetune tasks: ['emory_emotion_recognition']
+Eval datasets: ['Friends']
+Eval tasks: ['emory_emotion_recognition']
+Save path dir: ./logs_and_models/PRETRAINED_Friends.emory_emotion_recognition/bert-base-uncased
+
+Datasets:
+dev | Friends - emory_emotion_recognition - F1-micro - F1-weighted - 7 classes - 2065 examples | 
+test | Friends - emory_emotion_recognition - F1-micro - F1-weighted - 7 classes - 1912 examples | 
+EVALUATING
+Configuration:
+Frac: 1.0
+Debug: False
+Generate during training: False
+Model config: bert
+Cpu only: False
+Seed: -1
+Log and model dir: ./logs_and_models
+Saved model dir: ./logs_and_models/PRETRAINED_Friends.emory_emotion_recognition/bert-base-uncased/
+Data dir: /home2/wangyian/573/LING573-project/src/tlidb/examples/../TLiDB/data
+Num workers: 4
+Pipeline parallel: False
+Model: bert-base-uncased
+Max dialogue length: 0
+Do train: False
+Do finetune: False
+Num epochs: 10
+Effective batch size: 60
+Gpu batch size: 20
+Learning rate: 3e-05
+Fp16: True
+Max grad norm: 1.0
+Save best: True
+Save last: False
+Imbalanced task weighting: False
+Do eval: True
+Eval best: True
+Eval last: False
+Source tasks: ['emory_emotion_recognition']
+Source datasets: ['Friends']
+Target tasks: ['emory_emotion_recognition']
+Target datasets: ['Friends']
+Multitask: False
+Few shot percent: None
+Optimizer: Adam
+Weight decay: 0.0
+Progress bar: True
+Save pred: False
+Resume: False
+Model type: Encoder
+Device: cpu
+Train datasets: ['Friends']
+Train tasks: ['emory_emotion_recognition']
+Dev datasets: ['Friends']
+Dev tasks: ['emory_emotion_recognition']
+Finetune datasets: ['Friends']
+Finetune tasks: ['emory_emotion_recognition']
+Eval datasets: ['Friends']
+Eval tasks: ['emory_emotion_recognition']
+Save path dir: ./logs_and_models/PRETRAINED_Friends.emory_emotion_recognition/bert-base-uncased
+
+Datasets:
+dev | Friends - emory_emotion_recognition - F1-micro - F1-weighted - 7 classes - 2065 examples | 
+test | Friends - emory_emotion_recognition - F1-micro - F1-weighted - 7 classes - 1912 examples | 
+Loaded model from ./logs_and_models/PRETRAINED_Friends.emory_emotion_recognition/bert-base-uncased/best_model.pt
+Eval on dev split at epoch 3: Friends emory_emotion_recognition-
+Loss-cross_entropy: 1.7659
+F1-micro: 0.4019
+F1-weighted: 0.3711
+
+Eval on test split at epoch 3: Friends emory_emotion_recognition-
+Loss-cross_entropy: 1.7252
+F1-micro: 0.4299
+F1-weighted: 0.3946
+
+EVALUATING
+Configuration:
+Frac: 1.0
+Debug: False
+Generate during training: False
+Model config: bert
+Cpu only: False
+Seed: -1
+Log and model dir: ./logs_and_models
+Saved model dir: ./logs_and_models/PRETRAINED_Friends.emory_emotion_recognition/bert-base-uncased/
+Data dir: /home2/wangyian/573/LING573-project/src/tlidb/examples/../TLiDB/data
+Num workers: 4
+Pipeline parallel: False
+Model: bert-base-uncased
+Max dialogue length: 0
+Do train: False
+Do finetune: False
+Num epochs: 10
+Effective batch size: 60
+Gpu batch size: 20
+Learning rate: 3e-05
+Fp16: True
+Max grad norm: 1.0
+Save best: True
+Save last: False
+Imbalanced task weighting: False
+Do eval: True
+Eval best: True
+Eval last: False
+Source tasks: ['emory_emotion_recognition']
+Source datasets: ['Friends']
+Target tasks: ['emory_emotion_recognition']
+Target datasets: ['Friends']
+Multitask: False
+Few shot percent: None
+Optimizer: Adam
+Weight decay: 0.0
+Progress bar: True
+Save pred: False
+Resume: False
+Model type: Encoder
+Device: cpu
+Train datasets: ['Friends']
+Train tasks: ['emory_emotion_recognition']
+Dev datasets: ['Friends']
+Dev tasks: ['emory_emotion_recognition']
+Finetune datasets: ['Friends']
+Finetune tasks: ['emory_emotion_recognition']
+Eval datasets: ['Friends']
+Eval tasks: ['emory_emotion_recognition']
+Save path dir: ./logs_and_models/PRETRAINED_Friends.emory_emotion_recognition/bert-base-uncased
+
+Datasets:
+dev | Friends - emory_emotion_recognition - F1-micro - F1-weighted - 7 classes - 2065 examples | 
+test | Friends - emory_emotion_recognition - F1-micro - F1-weighted - 7 classes - 1912 examples | 
+Loaded model from ./logs_and_models/PRETRAINED_Friends.emory_emotion_recognition/bert-base-uncased/best_model.pt
+Eval on dev split at epoch 3: Friends emory_emotion_recognition-
+Loss-cross_entropy: 1.7626
+F1-micro: 0.4005
+F1-weighted: 0.3694
+
+Eval on test split at epoch 3: Friends emory_emotion_recognition-
+Loss-cross_entropy: 1.7287
+F1-micro: 0.4299
+F1-weighted: 0.3966
+
+EVALUATING
+Configuration:
+Frac: 1.0
+Debug: False
+Generate during training: False
+Model config: bert
+Cpu only: False
+Seed: -1
+Log and model dir: ./logs_and_models
+Saved model dir: ./logs_and_models/PRETRAINED_Friends.emory_emotion_recognition/bert-base-uncased/
+Data dir: /home2/wangyian/573/LING573-project/src/tlidb/examples/../TLiDB/data
+Num workers: 4
+Pipeline parallel: False
+Model: bert-base-uncased
+Max dialogue length: 0
+Do train: False
+Do finetune: False
+Num epochs: 10
+Effective batch size: 60
+Gpu batch size: 20
+Learning rate: 3e-05
+Fp16: True
+Max grad norm: 1.0
+Save best: True
+Save last: False
+Imbalanced task weighting: False
+Do eval: True
+Eval best: True
+Eval last: False
+Source tasks: ['emory_emotion_recognition']
+Source datasets: ['Friends']
+Target tasks: ['emory_emotion_recognition']
+Target datasets: ['Friends']
+Multitask: False
+Few shot percent: None
+Optimizer: Adam
+Weight decay: 0.0
+Progress bar: True
+Save pred: False
+Resume: False
+Model type: Encoder
+Device: cpu
+Train datasets: ['Friends']
+Train tasks: ['emory_emotion_recognition']
+Dev datasets: ['Friends']
+Dev tasks: ['emory_emotion_recognition']
+Finetune datasets: ['Friends']
+Finetune tasks: ['emory_emotion_recognition']
+Eval datasets: ['Friends']
+Eval tasks: ['emory_emotion_recognition']
+Save path dir: ./logs_and_models/PRETRAINED_Friends.emory_emotion_recognition/bert-base-uncased
+
+Datasets:
+dev | Friends - emory_emotion_recognition - F1-micro - F1-weighted - 7 classes - 2065 examples | 
+test | Friends - emory_emotion_recognition - F1-micro - F1-weighted - 7 classes - 1912 examples | 
+EVALUATING
+Configuration:
+Frac: 1.0
+Debug: False
+Generate during training: False
+Model config: bert
+Cpu only: False
+Seed: -1
+Log and model dir: ./logs_and_models
+Saved model dir: ./logs_and_models/PRETRAINED_Friends.emory_emotion_recognition/bert-base-uncased/
+Data dir: /home2/wangyian/573/LING573-project/src/tlidb/examples/../TLiDB/data
+Num workers: 4
+Pipeline parallel: False
+Model: bert-base-uncased
+Max dialogue length: 0
+Do train: False
+Do finetune: False
+Num epochs: 10
+Effective batch size: 60
+Gpu batch size: 20
+Learning rate: 3e-05
+Fp16: True
+Max grad norm: 1.0
+Save best: True
+Save last: False
+Imbalanced task weighting: False
+Do eval: True
+Eval best: True
+Eval last: False
+Source tasks: ['emory_emotion_recognition']
+Source datasets: ['Friends']
+Target tasks: ['emory_emotion_recognition']
+Target datasets: ['Friends']
+Multitask: False
+Few shot percent: None
+Optimizer: Adam
+Weight decay: 0.0
+Progress bar: True
+Save pred: False
+Resume: False
+Model type: Encoder
+Device: cpu
+Train datasets: ['Friends']
+Train tasks: ['emory_emotion_recognition']
+Dev datasets: ['Friends']
+Dev tasks: ['emory_emotion_recognition']
+Finetune datasets: ['Friends']
+Finetune tasks: ['emory_emotion_recognition']
+Eval datasets: ['Friends']
+Eval tasks: ['emory_emotion_recognition']
+Save path dir: ./logs_and_models/PRETRAINED_Friends.emory_emotion_recognition/bert-base-uncased
+
+Datasets:
+dev | Friends - emory_emotion_recognition - F1-micro - F1-weighted - 7 classes - 2065 examples | 
+test | Friends - emory_emotion_recognition - F1-micro - F1-weighted - 7 classes - 1912 examples | 
+Loaded model from ./logs_and_models/PRETRAINED_Friends.emory_emotion_recognition/bert-base-uncased/best_model.pt
+EVALUATING
+Configuration:
+Frac: 1.0
+Debug: False
+Generate during training: False
+Model config: bert
+Cpu only: False
+Seed: -1
+Log and model dir: ./logs_and_models
+Saved model dir: ./logs_and_models/PRETRAINED_Friends.emory_emotion_recognition/bert-base-uncased/
+Data dir: /home2/wangyian/573/LING573-project/src/tlidb/examples/../TLiDB/data
+Num workers: 4
+Pipeline parallel: False
+Model: bert-base-uncased
+Max dialogue length: 0
+Do train: False
+Do finetune: False
+Num epochs: 10
+Effective batch size: 60
+Gpu batch size: 20
+Learning rate: 3e-05
+Fp16: True
+Max grad norm: 1.0
+Save best: True
+Save last: False
+Imbalanced task weighting: False
+Do eval: True
+Eval best: True
+Eval last: False
+Source tasks: ['emory_emotion_recognition']
+Source datasets: ['Friends']
+Target tasks: ['emory_emotion_recognition']
+Target datasets: ['Friends']
+Multitask: False
+Few shot percent: None
+Optimizer: Adam
+Weight decay: 0.0
+Progress bar: True
+Save pred: False
+Resume: False
+Model type: Encoder
+Device: cpu
+Train datasets: ['Friends']
+Train tasks: ['emory_emotion_recognition']
+Dev datasets: ['Friends']
+Dev tasks: ['emory_emotion_recognition']
+Finetune datasets: ['Friends']
+Finetune tasks: ['emory_emotion_recognition']
+Eval datasets: ['Friends']
+Eval tasks: ['emory_emotion_recognition']
+Save path dir: ./logs_and_models/PRETRAINED_Friends.emory_emotion_recognition/bert-base-uncased
+
+Datasets:
+dev | Friends - emory_emotion_recognition - F1-micro - F1-weighted - 7 classes - 2065 examples | 
+test | Friends - emory_emotion_recognition - F1-micro - F1-weighted - 7 classes - 1912 examples | 
+Loaded model from ./logs_and_models/PRETRAINED_Friends.emory_emotion_recognition/bert-base-uncased/best_model.pt
+Eval on dev split at epoch 3: Friends emory_emotion_recognition-
+Loss-cross_entropy: 1.7640
+F1-micro: 0.4068
+F1-weighted: 0.3765
+
+Eval on test split at epoch 3: Friends emory_emotion_recognition-
+Loss-cross_entropy: 1.7324
+F1-micro: 0.4299
+F1-weighted: 0.3969
+
+EVALUATING
+Configuration:
+Frac: 1.0
+Debug: False
+Generate during training: False
+Model config: bert
+Cpu only: False
+Seed: -1
+Log and model dir: ./logs_and_models
+Saved model dir: ./logs_and_models/PRETRAINED_Friends.emory_emotion_recognition/bert-base-uncased/
+Data dir: /home2/wangyian/573/LING573-project/src/tlidb/examples/../TLiDB/data
+Num workers: 4
+Pipeline parallel: False
+Model: bert-base-uncased
+Max dialogue length: 0
+Do train: False
+Do finetune: False
+Num epochs: 10
+Effective batch size: 60
+Gpu batch size: 20
+Learning rate: 3e-05
+Fp16: True
+Max grad norm: 1.0
+Save best: True
+Save last: False
+Imbalanced task weighting: False
+Do eval: True
+Eval best: True
+Eval last: False
+Source tasks: ['emory_emotion_recognition']
+Source datasets: ['Friends']
+Target tasks: ['emory_emotion_recognition']
+Target datasets: ['Friends']
+Multitask: False
+Few shot percent: None
+Optimizer: Adam
+Weight decay: 0.0
+Progress bar: True
+Save pred: False
+Resume: False
+Model type: Encoder
+Device: cuda
+Train datasets: ['Friends']
+Train tasks: ['emory_emotion_recognition']
+Dev datasets: ['Friends']
+Dev tasks: ['emory_emotion_recognition']
+Finetune datasets: ['Friends']
+Finetune tasks: ['emory_emotion_recognition']
+Eval datasets: ['Friends']
+Eval tasks: ['emory_emotion_recognition']
+Save path dir: ./logs_and_models/PRETRAINED_Friends.emory_emotion_recognition/bert-base-uncased
+
+Datasets:
+dev | Friends - emory_emotion_recognition - F1-micro - F1-weighted - 7 classes - 2065 examples | 
+test | Friends - emory_emotion_recognition - F1-micro - F1-weighted - 7 classes - 1912 examples | 
+Loaded model from ./logs_and_models/PRETRAINED_Friends.emory_emotion_recognition/bert-base-uncased/best_model.pt
+Eval on dev split at epoch 3: Friends emory_emotion_recognition-
+Loss-cross_entropy: 1.7635
+F1-micro: 0.4111
+F1-weighted: 0.3798
+
+Eval on test split at epoch 3: Friends emory_emotion_recognition-
+Loss-cross_entropy: 1.7267
+F1-micro: 0.4331
+F1-weighted: 0.3993
+
+EVALUATING
+Configuration:
+Frac: 1.0
+Debug: False
+Generate during training: False
+Model config: bert
+Cpu only: False
+Seed: -1
+Log and model dir: ./logs_and_models
+Saved model dir: ./logs_and_models/PRETRAINED_Friends.emory_emotion_recognition/bert-base-uncased/
+Data dir: /home2/wangyian/573/LING573-project/src/tlidb/examples/../TLiDB/data
+Num workers: 4
+Pipeline parallel: False
+Model: bert-base-uncased
+Max dialogue length: 0
+Do train: False
+Do finetune: False
+Num epochs: 10
+Effective batch size: 60
+Gpu batch size: 20
+Learning rate: 3e-05
+Fp16: True
+Max grad norm: 1.0
+Save best: True
+Save last: False
+Imbalanced task weighting: False
+Do eval: True
+Eval best: True
+Eval last: False
+Source tasks: ['emory_emotion_recognition']
+Source datasets: ['Friends']
+Target tasks: ['emory_emotion_recognition']
+Target datasets: ['Friends']
+Multitask: False
+Few shot percent: None
+Optimizer: Adam
+Weight decay: 0.0
+Progress bar: True
+Save pred: False
+Resume: False
+Model type: Encoder
+Device: cuda
+Train datasets: ['Friends']
+Train tasks: ['emory_emotion_recognition']
+Dev datasets: ['Friends']
+Dev tasks: ['emory_emotion_recognition']
+Finetune datasets: ['Friends']
+Finetune tasks: ['emory_emotion_recognition']
+Eval datasets: ['Friends']
+Eval tasks: ['emory_emotion_recognition']
+Save path dir: ./logs_and_models/PRETRAINED_Friends.emory_emotion_recognition/bert-base-uncased
+
+Datasets:
+dev | Friends - emory_emotion_recognition - F1-micro - F1-weighted - 7 classes - 2065 examples | 
+test | Friends - emory_emotion_recognition - F1-micro - F1-weighted - 7 classes - 1912 examples | 
+Loaded model from ./logs_and_models/PRETRAINED_Friends.emory_emotion_recognition/bert-base-uncased/best_model.pt
+Eval on dev split at epoch 3: Friends emory_emotion_recognition-
+Loss-cross_entropy: 1.7678
+F1-micro: 0.4010
+F1-weighted: 0.3702
+
+Eval on test split at epoch 3: Friends emory_emotion_recognition-
+Loss-cross_entropy: 1.7236
+F1-micro: 0.4325
+F1-weighted: 0.3971
+

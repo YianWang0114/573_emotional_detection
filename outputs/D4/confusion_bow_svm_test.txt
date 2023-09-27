@@ -1,0 +1,8 @@
+			joyful  	mad     	neutral 	peaceful	powerful	sad     	scared  	
+joyful  			163			21			139			21			12			18			30			
+mad     			41			38			102			11			16			12			19			
+neutral 			72			19			397			21			18			15			24			
+peaceful			45			14			76			12			10			7			5			
+powerful			31			10			77			4			14			5			17			
+sad     			23			10			52			2			4			22			9			
+scared  			36			25			139			8			8			9			29			

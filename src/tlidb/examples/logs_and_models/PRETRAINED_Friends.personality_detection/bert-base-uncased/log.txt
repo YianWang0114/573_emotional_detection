@@ -1,0 +1,532 @@
+TRAINING
+Configuration:
+Frac: 1.0
+Debug: False
+Generate during training: False
+Model config: None
+Cpu only: False
+Seed: -1
+Log and model dir: ./logs_and_models
+Saved model dir: None
+Data dir: /content/drive/.shortcut-targets-by-id/11AZFd2NLgvCCRF_dyZ5p2M6wEGqrh9yX/573-own/TLiDB/tlidb/examples/../TLiDB/data
+Num workers: 4
+Pipeline parallel: False
+Model: bert-base-uncased
+Max dialogue length: 0
+Do train: True
+Do finetune: False
+Num epochs: 20
+Effective batch size: 40
+Gpu batch size: 20
+Learning rate: 1e-05
+Fp16: False
+Max grad norm: 1.0
+Save best: True
+Save last: False
+Imbalanced task weighting: False
+Do eval: True
+Eval best: True
+Eval last: False
+Source tasks: ['personality_detection']
+Source datasets: ['Friends']
+Target tasks: ['personality_detection']
+Target datasets: ['Friends']
+Multitask: False
+Few shot percent: None
+Optimizer: AdamW
+Weight decay: 0.0
+Progress bar: True
+Save pred: False
+Resume: False
+Model type: Encoder
+Device: cuda
+Train datasets: ['Friends']
+Train tasks: ['personality_detection']
+Dev datasets: ['Friends']
+Dev tasks: ['personality_detection']
+Finetune datasets: ['Friends']
+Finetune tasks: ['personality_detection']
+Eval datasets: ['Friends']
+Eval tasks: ['personality_detection']
+Save path dir: ./logs_and_models/PRETRAINED_Friends.personality_detection/bert-base-uncased
+
+Datasets:
+train | Friends - personality_detection - acc - 2 classes - 487 examples | 
+dev | Friends - personality_detection - acc - 2 classes - 114 examples | 
+
+Epoch 0
+Epoch eval:
+Friends personality_detection-
+Loss-cross_entropy: 0.7868
+acc: 0.5097
+
+Epoch eval:
+Friends personality_detection-
+Loss-cross_entropy: 0.7194
+acc: 0.4719
+
+Validation metric: 0.4719
+Epoch 0 gives best validation result so far.
+Saved model to ./logs_and_models/PRETRAINED_Friends.personality_detection/bert-base-uncased/best_model.pt
+
+
+Epoch 1
+Epoch eval:
+Friends personality_detection-
+Loss-cross_entropy: 0.6935
+acc: 0.5405
+
+Epoch eval:
+Friends personality_detection-
+Loss-cross_entropy: 0.6922
+acc: 0.5561
+
+Validation metric: 0.5561
+Epoch 1 gives best validation result so far.
+Saved model to ./logs_and_models/PRETRAINED_Friends.personality_detection/bert-base-uncased/best_model.pt
+
+
+Epoch 2
+Epoch eval:
+Friends personality_detection-
+Loss-cross_entropy: 0.6705
+acc: 0.5762
+
+Epoch eval:
+Friends personality_detection-
+Loss-cross_entropy: 0.7051
+acc: 0.5491
+
+Validation metric: 0.5491
+
+
+Epoch 3
+Epoch eval:
+Friends personality_detection-
+Loss-cross_entropy: 0.6547
+acc: 0.6090
+
+Epoch eval:
+Friends personality_detection-
+Loss-cross_entropy: 0.7075
+acc: 0.5421
+
+Validation metric: 0.5421
+
+
+Epoch 4
+Epoch eval:
+Friends personality_detection-
+Loss-cross_entropy: 0.6261
+acc: 0.6489
+
+Epoch eval:
+Friends personality_detection-
+Loss-cross_entropy: 0.7208
+acc: 0.5491
+
+Validation metric: 0.5491
+
+
+Epoch 5
+Epoch eval:
+Friends personality_detection-
+Loss-cross_entropy: 0.5963
+acc: 0.6784
+
+Epoch eval:
+Friends personality_detection-
+Loss-cross_entropy: 0.7649
+acc: 0.5228
+
+Validation metric: 0.5228
+
+
+Epoch 6
+Epoch eval:
+Friends personality_detection-
+Loss-cross_entropy: 0.5780
+acc: 0.6899
+
+Epoch eval:
+Friends personality_detection-
+Loss-cross_entropy: 0.7459
+acc: 0.5421
+
+Validation metric: 0.5421
+
+
+Epoch 7
+Epoch eval:
+Friends personality_detection-
+Loss-cross_entropy: 0.5425
+acc: 0.7187
+
+Epoch eval:
+Friends personality_detection-
+Loss-cross_entropy: 0.7786
+acc: 0.5105
+
+Validation metric: 0.5105
+
+
+Epoch 8
+Epoch eval:
+Friends personality_detection-
+Loss-cross_entropy: 0.5053
+acc: 0.7437
+
+Epoch eval:
+Friends personality_detection-
+Loss-cross_entropy: 0.7664
+acc: 0.5509
+
+Validation metric: 0.5509
+
+
+Epoch 9
+Epoch eval:
+Friends personality_detection-
+Loss-cross_entropy: 0.4775
+acc: 0.7639
+
+Epoch eval:
+Friends personality_detection-
+Loss-cross_entropy: 0.7853
+acc: 0.5404
+
+Validation metric: 0.5404
+
+
+Epoch 10
+Epoch eval:
+Friends personality_detection-
+Loss-cross_entropy: 0.4410
+acc: 0.8004
+
+Epoch eval:
+Friends personality_detection-
+Loss-cross_entropy: 0.7992
+acc: 0.5281
+
+Validation metric: 0.5281
+
+
+Epoch 11
+Epoch eval:
+Friends personality_detection-
+Loss-cross_entropy: 0.4005
+acc: 0.8324
+
+Epoch eval:
+Friends personality_detection-
+Loss-cross_entropy: 0.8070
+acc: 0.5404
+
+Validation metric: 0.5404
+
+
+Epoch 12
+Epoch eval:
+Friends personality_detection-
+Loss-cross_entropy: 0.3553
+acc: 0.8645
+
+Epoch eval:
+Friends personality_detection-
+Loss-cross_entropy: 0.8241
+acc: 0.5491
+
+Validation metric: 0.5491
+
+
+Epoch 13
+Epoch eval:
+Friends personality_detection-
+Loss-cross_entropy: 0.3170
+acc: 0.8953
+
+Epoch eval:
+Friends personality_detection-
+Loss-cross_entropy: 0.8330
+acc: 0.5561
+
+Validation metric: 0.5561
+
+
+Epoch 14
+Epoch eval:
+Friends personality_detection-
+Loss-cross_entropy: 0.2755
+acc: 0.9191
+
+Epoch eval:
+Friends personality_detection-
+Loss-cross_entropy: 0.8540
+acc: 0.5526
+
+Validation metric: 0.5526
+
+
+Epoch 15
+Epoch eval:
+Friends personality_detection-
+Loss-cross_entropy: 0.2405
+acc: 0.9368
+
+Epoch eval:
+Friends personality_detection-
+Loss-cross_entropy: 0.8396
+acc: 0.5719
+
+Validation metric: 0.5719
+Epoch 15 gives best validation result so far.
+Saved model to ./logs_and_models/PRETRAINED_Friends.personality_detection/bert-base-uncased/best_model.pt
+
+
+Epoch 16
+Epoch eval:
+Friends personality_detection-
+Loss-cross_entropy: 0.2108
+acc: 0.9450
+
+Epoch eval:
+Friends personality_detection-
+Loss-cross_entropy: 0.9008
+acc: 0.5737
+
+Validation metric: 0.5737
+Epoch 16 gives best validation result so far.
+Saved model to ./logs_and_models/PRETRAINED_Friends.personality_detection/bert-base-uncased/best_model.pt
+
+
+Epoch 17
+Epoch eval:
+Friends personality_detection-
+Loss-cross_entropy: 0.1784
+acc: 0.9634
+
+Epoch eval:
+Friends personality_detection-
+Loss-cross_entropy: 0.9198
+acc: 0.5649
+
+Validation metric: 0.5649
+
+
+Epoch 18
+Epoch eval:
+Friends personality_detection-
+Loss-cross_entropy: 0.1492
+acc: 0.9696
+
+Epoch eval:
+Friends personality_detection-
+Loss-cross_entropy: 0.9304
+acc: 0.5754
+
+Validation metric: 0.5754
+Epoch 18 gives best validation result so far.
+Saved model to ./logs_and_models/PRETRAINED_Friends.personality_detection/bert-base-uncased/best_model.pt
+
+
+Epoch 19
+Epoch eval:
+Friends personality_detection-
+Loss-cross_entropy: 0.1281
+acc: 0.9762
+
+Epoch eval:
+Friends personality_detection-
+Loss-cross_entropy: 0.9806
+acc: 0.5596
+
+Validation metric: 0.5596
+
+EVALUATING
+Configuration:
+Frac: 1.0
+Debug: False
+Generate during training: False
+Model config: None
+Cpu only: False
+Seed: -1
+Log and model dir: ./logs_and_models
+Saved model dir: None
+Data dir: /content/drive/.shortcut-targets-by-id/11AZFd2NLgvCCRF_dyZ5p2M6wEGqrh9yX/573-own/TLiDB/tlidb/examples/../TLiDB/data
+Num workers: 4
+Pipeline parallel: False
+Model: bert-base-uncased
+Max dialogue length: 0
+Do train: True
+Do finetune: False
+Num epochs: 20
+Effective batch size: 40
+Gpu batch size: 20
+Learning rate: 1e-05
+Fp16: False
+Max grad norm: 1.0
+Save best: True
+Save last: False
+Imbalanced task weighting: False
+Do eval: True
+Eval best: True
+Eval last: False
+Source tasks: ['personality_detection']
+Source datasets: ['Friends']
+Target tasks: ['personality_detection']
+Target datasets: ['Friends']
+Multitask: False
+Few shot percent: None
+Optimizer: AdamW
+Weight decay: 0.0
+Progress bar: True
+Save pred: False
+Resume: False
+Model type: Encoder
+Device: cuda
+Train datasets: ['Friends']
+Train tasks: ['personality_detection']
+Dev datasets: ['Friends']
+Dev tasks: ['personality_detection']
+Finetune datasets: ['Friends']
+Finetune tasks: ['personality_detection']
+Eval datasets: ['Friends']
+Eval tasks: ['personality_detection']
+Save path dir: ./logs_and_models/PRETRAINED_Friends.personality_detection/bert-base-uncased
+
+Datasets:
+test | Friends - personality_detection - acc - 2 classes - 110 examples | 
+Loaded model from ./logs_and_models/PRETRAINED_Friends.personality_detection/bert-base-uncased/best_model.pt
+Eval on test split at epoch 18: Friends personality_detection-
+Loss-cross_entropy: 0.9001
+acc: 0.5564
+
+EVALUATING
+Configuration:
+Frac: 1.0
+Debug: False
+Generate during training: False
+Model config: bert
+Cpu only: False
+Seed: -1
+Log and model dir: ./logs_and_models
+Saved model dir: ./logs_and_models/PRETRAINED_Friends.personality_detection/bert-base-uncased/
+Data dir: /home2/wangyian/573/LING573-project/src/tlidb/examples/../TLiDB/data
+Num workers: 4
+Pipeline parallel: False
+Model: bert-base-uncased
+Max dialogue length: 0
+Do train: False
+Do finetune: False
+Num epochs: 10
+Effective batch size: 60
+Gpu batch size: 20
+Learning rate: 3e-05
+Fp16: True
+Max grad norm: 1.0
+Save best: True
+Save last: False
+Imbalanced task weighting: False
+Do eval: True
+Eval best: True
+Eval last: False
+Source tasks: ['personality_detection']
+Source datasets: ['Friends']
+Target tasks: ['personality_detection']
+Target datasets: ['Friends']
+Multitask: False
+Few shot percent: None
+Optimizer: Adam
+Weight decay: 0.0
+Progress bar: True
+Save pred: False
+Resume: False
+Model type: Encoder
+Device: cuda
+Train datasets: ['Friends']
+Train tasks: ['personality_detection']
+Dev datasets: ['Friends']
+Dev tasks: ['personality_detection']
+Finetune datasets: ['Friends']
+Finetune tasks: ['personality_detection']
+Eval datasets: ['Friends']
+Eval tasks: ['personality_detection']
+Save path dir: ./logs_and_models/PRETRAINED_Friends.personality_detection/bert-base-uncased
+
+Datasets:
+dev | Friends - personality_detection - acc - 2 classes - 114 examples | 
+test | Friends - personality_detection - acc - 2 classes - 110 examples | 
+Loaded model from ./logs_and_models/PRETRAINED_Friends.personality_detection/bert-base-uncased/best_model.pt
+Eval on dev split at epoch 18: Friends personality_detection-
+Loss-cross_entropy: 0.9323
+acc: 0.5649
+
+Eval on test split at epoch 18: Friends personality_detection-
+Loss-cross_entropy: 0.9013
+acc: 0.5600
+
+EVALUATING
+Configuration:
+Frac: 1.0
+Debug: False
+Generate during training: False
+Model config: bert
+Cpu only: False
+Seed: -1
+Log and model dir: ./logs_and_models
+Saved model dir: ./logs_and_models/PRETRAINED_Friends.personality_detection/bert-base-uncased/
+Data dir: /home2/wangyian/573/LING573-project/src/tlidb/examples/../TLiDB/data
+Num workers: 4
+Pipeline parallel: False
+Model: bert-base-uncased
+Max dialogue length: 0
+Do train: False
+Do finetune: False
+Num epochs: 10
+Effective batch size: 60
+Gpu batch size: 20
+Learning rate: 3e-05
+Fp16: True
+Max grad norm: 1.0
+Save best: True
+Save last: False
+Imbalanced task weighting: False
+Do eval: True
+Eval best: True
+Eval last: False
+Source tasks: ['personality_detection']
+Source datasets: ['Friends']
+Target tasks: ['personality_detection']
+Target datasets: ['Friends']
+Multitask: False
+Few shot percent: None
+Optimizer: Adam
+Weight decay: 0.0
+Progress bar: True
+Save pred: False
+Resume: False
+Model type: Encoder
+Device: cuda
+Train datasets: ['Friends']
+Train tasks: ['personality_detection']
+Dev datasets: ['Friends']
+Dev tasks: ['personality_detection']
+Finetune datasets: ['Friends']
+Finetune tasks: ['personality_detection']
+Eval datasets: ['Friends']
+Eval tasks: ['personality_detection']
+Save path dir: ./logs_and_models/PRETRAINED_Friends.personality_detection/bert-base-uncased
+
+Datasets:
+dev | Friends - personality_detection - acc - 2 classes - 114 examples | 
+test | Friends - personality_detection - acc - 2 classes - 110 examples | 
+Loaded model from ./logs_and_models/PRETRAINED_Friends.personality_detection/bert-base-uncased/best_model.pt
+Eval on dev split at epoch 18: Friends personality_detection-
+Loss-cross_entropy: 0.9281
+acc: 0.5737
+
+Eval on test split at epoch 18: Friends personality_detection-
+Loss-cross_entropy: 0.9027
+acc: 0.5673
+
